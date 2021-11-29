@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserViewController">
+    <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   
+      <Button fx:id="quitButton" layoutX="450.0" layoutY="14.0" onAction="#quitButton" text="Quit" />
+      <TableView fx:id="goal" layoutX="91.0" layoutY="198.0" prefHeight="230.0" prefWidth="316.0">
+        <columns>
+          <TableColumn fx:id="goalDate" prefWidth="95.0" text="Date" />
+          <TableColumn fx:id="goalContents" prefWidth="220.0" text="Contents" />
+        </columns>
+      </TableView>
+      <Button fx:id="createButton" layoutX="192.0" layoutY="441.0" onAction="#createButton" text="Create" />
+      <Button fx:id="tableEditButton" layoutX="253.0" layoutY="441.0" onAction="#tableEditButton" text="Edit" />
+      <Button fx:id="tableDeleteButton" layoutX="304.0" layoutY="441.0" onAction="#tableDeleteButton" text="Delete" />
+      <Button fx:id="viewButton" layoutX="141.0" layoutY="441.0" onAction="#viewButton" text="View" />
+      <TextField fx:id="name" layoutX="91.0" layoutY="28.0" />
+      <TextField fx:id="email" layoutX="91.0" layoutY="55.0" />
+      <TextField fx:id="height" layoutX="91.0" layoutY="82.0" />
+      <TextField fx:id="weight" layoutX="91.0" layoutY="109.0" />
+      <TextField fx:id="age" layoutX="91.0" layoutY="136.0" />
+      <Text layoutX="19.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="19.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="19.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Height:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
